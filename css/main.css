@@ -1,3 +1,6 @@
+/*@import url('https://fonts.googleapis.com/css?family=Lato');*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
 [class*="zocial-"]:before {
   color: black;
   display: inline-block;
@@ -18,49 +21,62 @@ div#social a:last-of-type {
   margin: 0;
 }
 
-/*article {
-  margin: 0 auto;
-  max-width: 50em;
-  border-bottom: 1px solid #ddd;
-}
-
 body {
-  font-family: sans-serif;
-  margin: 2em;
-}*/
-
-/*div#social {
-  line-height: 2em;
-}*/
-
-/*figcaption {
-  color: #bb021e;
-  padding: 1em 0;
+    font-family: 'Lato', sans-serif;
+    color: #7d97ad;
 }
 
-figure {
-  margin: 1em 0 1em 0;
+.title-icon {
+    /*padding-top: 20px;
+    padding-bottom: 20px;*/
 }
 
-footer {
-  margin: 0 auto;
-  width: 800px;
+.text-muted {
+    color: #BCBBBB;
 }
 
-header {
-  margin: 0 auto;
-  width: 800px;
-}*/
+.text-thin {
+    font-weight: 100;
+}
 
-/*h1 {
-  margin: 0 auto 1em auto;
-  width: 800px;
-}*/
+.title-super {
+    font-size: 60px;
+}
+
+hr.title-bar {
+    border: 0;
+    height: 0; /* Firefox... */
+    box-shadow: 0 0 3px 1px #7d97ad;
+}
+hr.title-bar:after {  /* Not really supposed to work, but does */
+    content: "\00a0";  /* Prevent margin collapse */
+}
+
+.footer {
+    margin-bottom: 20px;
+}
+
+.mybar-container {
+    display: flex;
+    align-items: center;
+}
+
+.mybar-content {
+    flex: auto;
+    margin: auto;
+    padding: auto;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.mybar-left {
+
+}
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
-
+/*
 svg#logo {
   fill: #666;
   height: 6vw;
@@ -72,4 +88,4 @@ header:hover svg#logo {
   fill: #3d85c6;
   -webkit-filter: drop-shadow(3px 3px 3px #ddd);
   filter: drop-shadow(3px 3px 3px #ddd);
-}
+}*/
