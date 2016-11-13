@@ -1,67 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta name="description" content="Udacity Responsive Images course project" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
 
     <title>Eric Lam's Portfolio</title>
 
-    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=zocial" />
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/main.css" />
-
 </head>
 
 <body>
-    <!-- <header>
-        <a href="https://github.com/elam03/udacity-portfolio" title="Github Source Link for this Page">
-            <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <title>My Avatar</title>
-                <path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path>
-            </svg>
-        </a>
-    </header> -->
-    <!-- <h1 class="text-primary">OH GOD</h1> -->
-
-    <!-- <div class="col-sm-4"> -->
-        <!-- <img class="title-logo" src="http://placekitten.com/100/100" alt="Udacity logo"> -->
-        <!-- <a href="https://github.com/elam03/udacity-portfolio" title="Github Source Link for this Page"> -->
-            <!-- <img class="img-responsive" src="http://placekitten.com/24/24" alt="My Logo"> -->
-            <!-- <svg id="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                <title>My Avatar</title>
-                <path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"></path>
-            </svg> -->
-        <!-- </a> -->
-        <!-- <img class="img-responsive" src="http://placekitten.com/24/24" alt="My Logo"> -->
-
-    <!-- </div> -->
-    <!-- <div class="col-sm-4">
-    </div>
-    <div class="col-sm-4 text-right text-uppercase">
-        <h1 class="title-super text-thin">Eric Lam</h1>
-        <h4>Front-End Ninja</h4>
-    </div> -->
-
     <div class="container">
-        <!-- <div class="row mybar-container">
-            <div class="col-xs-6 mybar-content">
-                <img class="img-responsive pull-left center-block" src="http://placekitten.com/48/48" alt="My Logo">
-            </div>
-            <div class="col-xs-6 text-right text-uppercase mybar-content">
-                <h1 class="title-super text-thin">Eric Lam</h1>
-                <h4 class="text-muted">Front-End Ninja</h4>
-            </div>
-        </div> -->
-
         <div class="row mybar-container">
             <div class="col-xs-2 mybar-content mybar-left">
-                <img src="http://placekitten.com/48/48" alt="My Logo">
+                <img src="images/avatar0-64_icon.jpg" alt="Logo">
             </div>
             <div class="col-xs-10 mybar-content text-right text-uppercase">
                 <h1 class="title-super text-thin">Eric Lam</h1>
-                <h4 class="text-muted">Front-End Ninja</h4>
+                <h4 class="">Front-End Ninja</h4>
             </div>
         </div>
 
@@ -73,7 +31,10 @@
 
         <div class="row">
             <div class="col-md-12">
-                <img class="img-responsive" src="http://placekitten.com/320/240" alt="Main kitten image!">
+                <picture>
+                    <source srcset="images/avatar1-800_medium.png 800w, images/avatar1-400_small.png 400w">
+                    <img id="hero-image" class="img-circle center-block" src="images/avatar1-400_small.png" alt="Avatar">
+                </picture>
             </div>
         </div>
 
@@ -83,23 +44,41 @@
             </div>
         </div>
 
-        <section class="row text-center">
-            <article class="col-sm-4">
-                <img class="img-responsive center-block" src="http://placekitten.com/180/119" alt="Appify Kitten!" data-toggle="modal" data-target="#project1">
-                <h3 class="text-uppercase">Appify</h3>
-                <p>https://github.com/udacity/appify</p>
-            </article>
-            <article class="col-sm-4">
-                <img class="img-responsive center-block" src="http://placekitten.com/180/120" alt="Appify Sunflower!" data-toggle="modal" data-target="#project2">
-                <h3 class="text-uppercase">Sunflower</h3>
-                <p>https://github.com/udacity/sunflower</p>
-            </article>
-            <article class="col-sm-4">
-                <img class="img-responsive center-block" src="http://placekitten.com/180/121" alt="Appify Bokeh!" data-toggle="modal" data-target="#project3">
-                <h3 class="text-uppercase">Bokeh</h3>
-                <p>https://github.com/udacity/bokeh</p>
-            </article>
-        </section>
+        <div class="row text-center">
+            <section class="col-sm-4">
+                <picture>
+                    <source srcset="images/CrabCollectorPreview-800_medium.png 800w, images/CrabCollectorPreview-400_small.png 400w">
+                    <img class="img-responsive center-block" src="images/CrabCollectorPreview-400_small.png" alt="CrabCollector Preview">
+                </picture>
+                <h1 class="text-uppercase">Crab Collector</h1>
+                <a href="https://bitbucket.org/elam03/1gam">Bitbucket Source</a>
+            </section>
+            <section class="col-sm-4">
+                <picture>
+                    <source srcset="images/DistortogramsPreview-800_medium.png 800w, images/DistortogramsPreview-400_small.png 400w">
+                    <img class="img-responsive center-block" src="images/DistortogramsPreview-400_small.png" alt="Distortograms Preview">
+                </picture>
+                <h1 class="text-uppercase">Distortograms</h1>
+                <a href="https://bitbucket.org/elam03/1gam">Bitbucket Source</a>
+            </section>
+            <section class="col-sm-4">
+                <picture>
+                    <source srcset="images/RocksPreview-800_medium.png 800w, images/RocksPreview-400_small.png 400w">
+                    <img class="img-responsive center-block" src="images/RocksPreview-400_small.png" alt="Rocks Preview">
+                </picture>
+                <h1 class="text-uppercase">Rocks</h1>
+                <a href="https://bitbucket.org/elam03/1gam">Bitbucket Source</a>
+            </section>
+
+            <section class="col-sm-4">
+                <picture>
+                    <source srcset="images/ShipsPreview-800_medium.png 800w, images/ShipsPreview-400_small.png 400w">
+                    <img class="img-responsive center-block" src="images/ShipsPreview-400_small.png" alt="Ships Preview">
+                </picture>
+                <h1 class="text-uppercase">Ships</h1>
+                <a href="https://bitbucket.org/elam03/1gam">Bitbucket Source</a>
+            </section>
+        </div>
 
         <div class="row">
             <div class="col-md-12">
@@ -108,10 +87,9 @@
         </div>
 
         <footer class="row">
-            <div class="col-md-12 footer" id="social">
-                <a href="https://twitter.com/home?status=https://github.com/udacity/responsive-images" class="zocial-twitter">Twitter</a>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/udacity/responsive-images" class="zocial-facebook">Facebook</a>
-                <a href="https://plus.google.com/share?url=https://github.com/udacity/responsive-images" class="zocial-googleplus">Google+</a>
+            <div class="col-md-12 footer">
+                <a href="https://twitter.com/matchhead01" class="zocial-twitter"> Twitter</a>
+                <a href="https://www.facebook.com/eric.lam.the.miracle" class="zocial-facebook"> Facebook</a>
             </div>
         </footer>
     </div>

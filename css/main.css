@@ -1,34 +1,31 @@
-/*@import url('https://fonts.googleapis.com/css?family=Lato');*/
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+@import url('http://weloveiconfonts.com/api/?family=zocial');
 
+/* zocial */
 [class*="zocial-"]:before {
-  color: black;
-  display: inline-block;
   font-family: 'zocial', sans-serif;
-  text-shadow: 3px 3px 3px #aaa;
-  width: 2em;
 }
 
-a:hover [class*="zocial-"]:before {
-  color: #3d85c6;
+section {
+    padding-bottom: 20px;
 }
 
-div#social a {
-  margin: 0 1em 0 0;
-}
-
-div#social a:last-of-type {
-  margin: 0;
+section h1 {
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    color: #7d97ad;
+    color: #2d3c49;
 }
 
-.title-icon {
-    /*padding-top: 20px;
-    padding-bottom: 20px;*/
+img {
+    max-width: 100%;
+}
+
+#hero-image {
+    max-height: 400px;
 }
 
 .text-muted {
@@ -46,7 +43,7 @@ body {
 hr.title-bar {
     border: 0;
     height: 0; /* Firefox... */
-    box-shadow: 0 0 3px 1px #7d97ad;
+    box-shadow: 0 0 3px 1px #2d3c49;
 }
 hr.title-bar:after {  /* Not really supposed to work, but does */
     content: "\00a0";  /* Prevent margin collapse */
@@ -68,24 +65,3 @@ hr.title-bar:after {  /* Not really supposed to work, but does */
     min-width: 50px;
     min-height: 50px;
 }
-
-.mybar-left {
-
-}
-
-img {
-    max-width: 100%;
-}
-/*
-svg#logo {
-  fill: #666;
-  height: 6vw;
-  margin: 0 auto 0.5em auto;
-  width: 6vw;
-}
-
-header:hover svg#logo {
-  fill: #3d85c6;
-  -webkit-filter: drop-shadow(3px 3px 3px #ddd);
-  filter: drop-shadow(3px 3px 3px #ddd);
-}*/
